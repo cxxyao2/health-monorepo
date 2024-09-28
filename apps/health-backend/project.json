@@ -1,0 +1,17 @@
+{
+  "name": "health-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/health-backend",
+  "tags": [],
+  "targets": {
+    "swagger": {
+      "executor": "@nx-dotnet/core:update-swagger",
+      "outputs": ["{workspaceRoot}/generated/health-backend-swagger"],
+      "options": {
+        "output": "generated/health-backend-swagger"
+      },
+      "dependsOn": ["build"]
+    }
+  }
+}

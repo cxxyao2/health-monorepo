@@ -1,0 +1,23 @@
+{
+  "name": "health-backend-swagger",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "build": {
+      "executor": "nx:noop",
+      "outputs": ["generated/health-backend-swagger"]
+    },
+    "codegen": {
+      "executor": "@nx-dotnet/core:openapi-codegen",
+      "options": {
+        "useOpenApiGenerator": true,
+        "openApiGenerator": "typescript",
+        "openapiJsonPath": "generated/health-backend-swagger",
+        "outputProject": "generated-health-backend-types"
+      },
+      "dependsOn": ["swagger"],
+      "inputs": ["{projectRoot}/generated/health-backend-swagger"],
+      "outputs": ["{workspaceRoot}"]
+    }
+  },
+  "implicitDependencies": ["health-backend"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "generated-health-backend-types",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "generated/health-backend-types/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx:noop",
+      "outputs": ["{projectRoot}"]
+    }
+  },
+  "implicitDependencies": ["health-backend-swagger"]
+}

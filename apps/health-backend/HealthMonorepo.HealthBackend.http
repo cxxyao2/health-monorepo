@@ -1,0 +1,6 @@
+@HealthMonorepo.HealthBackend_HostAddress = http://localhost:5213
+
+GET {{HealthMonorepo.HealthBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

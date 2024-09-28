@@ -80,3 +80,35 @@ And join the Nx community:
 - [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
 - [Our Youtube channel](https://www.youtube.com/@nxdevtools)
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+## CI/CD
+- Finish it by visiting: https://cloud.nx.app/connect/MuNbcoTUBE
+
+## NX Commands
+### NX Angular
+- npx nx serve my-app
+- npx nx @nx/angular:app  my-app --directory=apps/my-app --routing=true
+- npx nx @nx/angular:workspace-config --routing=true
+- npx nx @nx/angular:component my-component --directory apps/my-app/src/my-component
+- npx nx g service services/my-service
+
+- npx nx test inpatientsys # run the unit tests for inpatientsys Angular app
+- npx nx lint inpatientsys # runs the linter on inpatientsys Angular app
+- npx nx e2e inpatientsys
+
+- npx nx graph  # show dependencies
+- npx nx show project inpatientsys --web
+- npx nx run-many -t test lint e2e
+- npx nx run my-app:test
+- npx nx run-many -t build
+- npx nx run my-app:build:production
+### NX Dontnet
+- npm install --save-dev @nx-dotnet/core --legacy-peer-deps
+- npx nx g @nx-dotnet/core:init
+- npx nx g @nx-dotnent/core:app health-api 
+for this app, use the nx path naming convention and the web-api project template
+- npx nx show project generated
+### NX Express API
+- npx nx add @nx/express
+- npx nx g @nx/express:app my-experss-api 
+- npx nx serve my-express-api
