@@ -17,6 +17,9 @@
     "paths": {
       "@health-monorepo/generated/health-backend-types": [
         "generated/health-backend-types/src/index.ts"
+      ],
+      "@health-frontend/*":[
+        "apps/health-frontend/src/*"
       ]
     }
   },

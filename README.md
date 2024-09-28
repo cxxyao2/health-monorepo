@@ -1,4 +1,11 @@
 # HealthMonorepo
+## Tech Stack
+- RESTful API, with reference to HL7 FHIR
+- Frontend: Anuglar 18+
+- Backend:  DOTNET Web API using c#
+- Backend optional: Express + Node
+
+## Monorepo Generator
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -90,7 +97,10 @@ And join the Nx community:
 - npx nx @nx/angular:app  my-app --directory=apps/my-app --routing=true
 - npx nx @nx/angular:workspace-config --routing=true
 - npx nx @nx/angular:component my-component --directory apps/my-app/src/my-component
-- npx nx g service services/my-service
+-  navigate to your Angular app, run 
+```
+npx nx g service services/my-service
+```
 
 - npx nx test inpatientsys # run the unit tests for inpatientsys Angular app
 - npx nx lint inpatientsys # runs the linter on inpatientsys Angular app
@@ -110,5 +120,9 @@ for this app, use the nx path naming convention and the web-api project template
 - npx nx show project generated
 ### NX Express API
 - npx nx add @nx/express
+- npx nx add cors @types@cors --legacy-peer-deps
 - npx nx g @nx/express:app my-experss-api 
 - npx nx serve my-express-api
+### Others
+- npx nx reset
+- npx nx dep-graph # show dependencies
