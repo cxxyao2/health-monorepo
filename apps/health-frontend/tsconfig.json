@@ -13,7 +13,7 @@
   "include": [],
   "references": [
     {
-      "path": "./tsconfig.editor.json"
+      "path": "./tsconfig.editor.json",
     },
     {
       "path": "./tsconfig.app.json"
