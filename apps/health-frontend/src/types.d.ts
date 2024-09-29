@@ -1,0 +1,1 @@
+declare const SSE_API_URL:string;

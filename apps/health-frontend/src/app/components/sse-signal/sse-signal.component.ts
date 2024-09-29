@@ -12,7 +12,7 @@ const url="http://localhost:3333/sse-endpoint";
 })
 export class SseSignalComponent  implements OnDestroy{
    sseMessageSignal = signal<string>('');
-    eventSource = new EventSource(url)
+    eventSource = new EventSource(SSE_API_URL);
   
 
    constructor(){
