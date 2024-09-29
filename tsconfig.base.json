@@ -15,11 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@health-frontend/*": ["apps/health-frontend/src/*"],
       "@health-monorepo/generated/health-backend-types": [
         "generated/health-backend-types/src/index.ts"
-      ],
-      "@health-frontend/*":[
-        "apps/health-frontend/src/*"
       ]
     }
   },

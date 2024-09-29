@@ -101,7 +101,8 @@ And join the Nx community:
 ```
 npx nx g service services/my-service
 ```
-
+- at monorepo root folder, create a component for Angular
+- npx nx g component components/component-name --project=angular-project-name
 - npx nx test inpatientsys # run the unit tests for inpatientsys Angular app
 - npx nx lint inpatientsys # runs the linter on inpatientsys Angular app
 - npx nx e2e inpatientsys
